@@ -1,0 +1,23 @@
+{
+  "name": "type-script",
+  "version": "1.0.0",
+  "description": "typescript-course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Janescobar92/Type-Script-Course.git"
+  },
+  "author": "Jan Escobar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Janescobar92/Type-Script-Course/issues"
+  },
+  "homepage": "https://github.com/Janescobar92/Type-Script-Course#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
