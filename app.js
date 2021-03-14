@@ -1,21 +1,13 @@
-function add(n1, n2) {
-    return n1 + n2;
+var userInput;
+var userName;
+userInput = 5;
+userInput = 'Jan';
+// userName = userInput; esto no se puede tendrias que: 
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
-function printResult(num) {
-    // esta funcion es de tine un return type void
-    console.log("Result: " + num);
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
 }
-function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-printResult(add(5, 12));
-var someValue; // esto es una variable de tipoe undefined siempre retornara undefined
-// let combinedValues: Function;
-var combinedValues;
-combinedValues = add;
-// combinedValues = printResult;
-console.log(combinedValues(8, 8));
-addAndHandle(10, 20, function (result) {
-    console.log(result);
-});
+var result = generateError('An error ocurred!', 500);
+console.log(result);
